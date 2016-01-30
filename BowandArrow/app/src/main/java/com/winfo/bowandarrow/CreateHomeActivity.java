@@ -25,6 +25,8 @@ public class CreateHomeActivity extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        Home home = new Home();
     }
 
 }
