@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.winfo.bowandarrow.MainActivity"
-    and>
+    tools:context="com.winfo.bowandarrow.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -28,7 +27,6 @@
                 android:gravity="left"
                 />
         </android.support.v7.widget.Toolbar>
-
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
