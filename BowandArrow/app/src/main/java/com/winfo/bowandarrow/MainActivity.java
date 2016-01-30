@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-<<<<<<< HEAD
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -36,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 hackToHomeView(v);
             }
         });
-=======
->>>>>>> d76201c2b21f7140fcbc31fe6dfbfd5266bc9dab
     }
 
     @Override
@@ -65,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     public void hackToHomeView(View view) {
         Intent intent = new Intent(this, ViewHome.class);
     }
-    
+
     public void createHome(View view) {
         Intent intent = new Intent(this, CreateHomeActivity.class);
         startActivity(intent);
