@@ -18,6 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".EditHomeActivity"
+            android:label="@string/title_activity_edit_home"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.winfo.bowandarrow.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreateHomeActivity"
+            android:label="@string/title_activity_create_home"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.winfo.bowandarrow.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
