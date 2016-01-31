@@ -65,6 +65,13 @@
             android:layout_width="fill_parent">
         </EditText>
 
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submit"
+            />
+
     </LinearLayout>
 
 </RelativeLayout>
