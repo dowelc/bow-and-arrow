@@ -6,24 +6,24 @@ import android.os.Parcelable;
 public class Home implements Parcelable {
 
     private String nickname;
-    private int bedrooms;
-    private int bathrooms;
-    private double price;
+    private Integer bedrooms;
+    private Integer bathrooms;
+    private Double price;
     private String address;
 
     public String getNickname() {
         return nickname;
     }
 
-    public int getBedrooms() {
+    public Integer getBedrooms() {
         return bedrooms;
     }
 
-    public int getBathrooms() {
+    public Integer getBathrooms() {
         return bathrooms;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
@@ -57,11 +57,11 @@ public class Home implements Parcelable {
 
     // Parcelling part
     public Home(Parcel in){
-        String[] data = new String[3];
+        String[] data = new String[5];
 
         in.readStringArray(data);
 
-        if (data.length > 0) {
+        if (data[0] != null) {
             this.nickname = data[0];
             this.bedrooms = Integer.parseInt(data[1]);
             this.bathrooms = Integer.parseInt(data[2]);
@@ -77,7 +77,7 @@ public class Home implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeStringArray(new String[] {
+        dest.writeStringArray(new String[]{
                 this.nickname,
                 this.bedrooms + "",
                 this.bathrooms + "",
