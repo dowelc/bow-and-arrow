@@ -1,6 +1,9 @@
 package com.winfo.bowandarrow;
 
+import android.content.ClipData;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,7 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class ViewHome extends AppCompatActivity {
 
@@ -19,7 +24,16 @@ public class ViewHome extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.top_bar);
         setSupportActionBar(toolbar);
 
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        String homeName = "Home name here";
+        setTitle(homeName);
+
+        TextView managerPhoneNum = (TextView) findViewById(R.id.manager_phone_data);
+        managerPhoneNum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callPhoneNum(v);
+            }
+        });
     }
 
     @Override
@@ -27,6 +41,16 @@ public class ViewHome extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.view_home_menu, menu);
         return true;
+    }
+
+    public void callPhoneNum(View v) {
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:5038583754"));
+        try {
+            startActivity(callIntent);
+        } catch (SecurityException e) {
+
+        }
     }
 
 }
