@@ -1,0 +1,23 @@
+[
+  {
+    "nickname": "Yellow house",
+    "bedrooms": 10,
+    "bathrooms": 4,
+    "price": 7750,
+    "address": "4747 19th Ave NE"
+  },
+  {
+    "nickname": "Above Yeti",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 1400,
+    "address": "4710 University Way NE"
+  },
+  {
+    "nickname": "U village",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "price": 1900,
+    "address": "4727 Ravenna Ave NE"
+  }
+]
