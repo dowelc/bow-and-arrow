@@ -50,7 +50,7 @@ public class EditHomeActivity extends AppCompatActivity {
     }
 
     public void submit(View view) {
-        
+
     }
 
 }
