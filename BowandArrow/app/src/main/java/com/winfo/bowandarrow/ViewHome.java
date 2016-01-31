@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class ViewHome extends AppCompatActivity {
 
     @Override
@@ -26,6 +28,21 @@ public class ViewHome extends AppCompatActivity {
 
         String homeName = "Home name here";
         setTitle(homeName);
+
+        Home home = getIntent().getExtras().getParcelable("com.winfo.bowandarrow.Home");
+
+        TextView rooms = (TextView) findViewById(R.id.num_rooms_data);
+        rooms.setText("" + home.getBedrooms());
+
+        TextView baths = (TextView) findViewById(R.id.num_baths_data);
+        baths.setText("" + home.getBathrooms());
+
+        TextView managerPhone = (TextView) findViewById(R.id.manager_phone_data);
+//        managerPhone.setText("" + home.getManagerPhone());
+
+        TextView managerEmail = (TextView) findViewById(R.id.manager_email_data);
+//        managerEmail.setText("" + home.getManagerEmail());
+
 
         TextView managerPhoneNum = (TextView) findViewById(R.id.manager_phone_data);
         managerPhoneNum.setOnClickListener(new View.OnClickListener() {
