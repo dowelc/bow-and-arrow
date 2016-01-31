@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    
+
     public void createHome(View view) {
         Intent intent = new Intent(this, CreateHomeActivity.class);
         startActivity(intent);
