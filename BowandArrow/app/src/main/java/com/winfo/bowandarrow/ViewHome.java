@@ -29,9 +29,9 @@ public class ViewHome extends AppCompatActivity {
         String homeName = "Home name here";
         setTitle(homeName);
 
-        Home home = getIntent().getExtras().getParcelable("com.winfo.bowandarrow.Home");
+//        Home home = getIntent().getExtras().getParcelable("com.winfo.bowandarrow.Home");
 
-        TextView rooms = (TextView) findViewById(R.id.num_rooms_data);
+//        TextView rooms = (TextView) findViewById(R.id.num_rooms_data);
 //        Integer numBedrooms = home.getBedrooms();
 //        if (numBedrooms != null) {
 //            rooms.setText("" + numBedrooms);
@@ -43,10 +43,10 @@ public class ViewHome extends AppCompatActivity {
 //            baths.setText("" + home.getBathrooms());
 //        }
 
-        TextView managerPhone = (TextView) findViewById(R.id.manager_phone_data);
+//        TextView managerPhone = (TextView) findViewById(R.id.manager_phone_data);
 //        managerPhone.setText("" + home.getManagerPhone());
 
-        TextView managerEmail = (TextView) findViewById(R.id.manager_email_data);
+//        TextView managerEmail = (TextView) findViewById(R.id.manager_email_data);
 //        managerEmail.setText("" + home.getManagerEmail());
 
 
