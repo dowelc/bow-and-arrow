@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void hackToHomeView(View view) {
         Intent intent = new Intent(this, ViewHome.class);
+        startActivity(intent);
     }
 
     public void createHome(View view) {
