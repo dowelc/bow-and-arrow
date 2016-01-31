@@ -22,4 +22,10 @@ public class EditHomeActivity extends AppCompatActivity {
         Parcelable myParcelableObject = (Parcelable) intent.getParcelableExtra("com.winfo.bowandarrow.Home");
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
