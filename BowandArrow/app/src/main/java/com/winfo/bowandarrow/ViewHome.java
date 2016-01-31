@@ -32,10 +32,10 @@ public class ViewHome extends AppCompatActivity {
         Home home = getIntent().getExtras().getParcelable("com.winfo.bowandarrow.Home");
 
         TextView rooms = (TextView) findViewById(R.id.num_rooms_data);
-        rooms.setText("" + home.getBedrooms());
+//        rooms.setText("" + home.getBedrooms());
 
         TextView baths = (TextView) findViewById(R.id.num_baths_data);
-        baths.setText("" + home.getBathrooms());
+//        baths.setText("" + home.getBathrooms());
 
         TextView managerPhone = (TextView) findViewById(R.id.manager_phone_data);
 //        managerPhone.setText("" + home.getManagerPhone());
