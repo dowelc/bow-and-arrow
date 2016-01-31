@@ -10,15 +10,148 @@
     android:paddingTop="0dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.winfo.bowandarrow.ViewHome"
-    tools:showIn="@layout/activity_view_home">
+    tools:showIn="@layout/activity_view_home"
+    android:weightSum="1">
+<!--android:orientation="vertical"-->
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
         android:elevation="4dp"
+        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/main_house_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_house_small"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_marginBottom="@dimen/element_margin"
+        android:layout_below="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/house_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location:"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/main_house_img"/>
+
+    <TextView
+        android:id="@+id/house_location_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="12345 NE Somewhere Dr"
+        android:gravity="right"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/main_house_img"
+        android:layout_toRightOf="@+id/house_location"/>
+
+    <TextView
+        android:id="@+id/num_rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of Rooms:"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/house_location"/>
+
+    <TextView
+        android:id="@+id/num_rooms_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="8"
+        android:gravity="right"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/house_location"
+        android:layout_toRightOf="@+id/num_rooms"/>
+
+    <TextView
+        android:id="@+id/num_baths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of Baths:"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/num_rooms"/>
+
+    <TextView
+        android:id="@+id/num_baths_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2.5"
+        android:gravity="right"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/num_rooms"
+        android:layout_toRightOf="@+id/num_baths"/>
+
+    <TextView
+        android:id="@+id/manager_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Manager Phone:"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/num_baths"/>
+
+    <TextView
+        android:id="@+id/manager_phone_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(206) 123-4567"
+        android:gravity="right"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/num_baths"
+        android:layout_toRightOf="@+id/manager_phone"/>
+
+
+    <TextView
+        android:id="@+id/manager_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Manager Email:"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/manager_phone"/>
+
+    <TextView
+        android:id="@+id/manager_email_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="themanager@gmail.com"
+        android:gravity="right"
+        android:padding="@dimen/element_margin"
+        android:layout_below="@+id/manager_phone"
+        android:layout_toRightOf="@+id/manager_email"/>
+
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/home_questions"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Questions"-->
+        <!--android:layout_below="@id/manager_email"/>-->
 
 </RelativeLayout>
