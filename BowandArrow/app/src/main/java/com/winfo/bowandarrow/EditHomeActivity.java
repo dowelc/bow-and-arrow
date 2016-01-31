@@ -45,8 +45,12 @@ public class EditHomeActivity extends AppCompatActivity {
         }
 
         if (home.getPrice() != null) {
-            price.setText(home.getPrice());
+            price.setText("" + home.getPrice());
         }
+    }
+
+    public void submit(View view) {
+        
     }
 
 }
