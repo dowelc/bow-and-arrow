@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.winfo.bowandarrow">
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,17 +27,19 @@
                 android:value="com.winfo.bowandarrow.MainActivity" />
         </activity>
         <activity
-            android:name=".EditHomeActivity"
-            android:label="@string/title_activity_edit_home"
+            android:name=".CreateHomeActivity"
+            android:label="@string/title_activity_create_home"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.winfo.bowandarrow.MainActivity" />
         </activity>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
         <activity
-            android:name=".CreateHomeActivity"
-            android:label="@string/title_activity_create_home"
+            android:name=".EditHomeActivity"
+            android:label="@string/title_activity_edit_home"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

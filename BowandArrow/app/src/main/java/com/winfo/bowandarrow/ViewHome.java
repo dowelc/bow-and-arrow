@@ -29,7 +29,7 @@ public class ViewHome extends AppCompatActivity {
         String homeName = "Home name here";
         setTitle(homeName);
 
-//        Home home = getIntent().getExtras().getParcelable("com.winfo.bowandarrow.Home");
+//        Home home = (Home) (getIntent().getExtras().getParcelable("com.winfo.bowandarrow.Home"));
 
 //        TextView rooms = (TextView) findViewById(R.id.num_rooms_data);
 //        Integer numBedrooms = home.getBedrooms();
@@ -37,8 +37,8 @@ public class ViewHome extends AppCompatActivity {
 //            rooms.setText("" + numBedrooms);
 //        }
 
-//        Integer numBaths = home.getBathrooms();
 //        TextView baths = (TextView) findViewById(R.id.num_baths_data);
+//        Integer numBaths = home.getBathrooms();
 //        if (numBaths != null) {
 //            baths.setText("" + home.getBathrooms());
 //        }
